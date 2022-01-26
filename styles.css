@@ -53,7 +53,7 @@ nav {
     /* filter: blur(10px); */
     width: 100vw;
     height: 60vh;
-    margin-top: 2rem;
+    margin: 6rem 0;
     z-index: 1;
 }
 
@@ -61,11 +61,11 @@ nav {
     /* display:flex;
     flex-flow: row nowrap; */
     position:absolute;
-    background-color: hsla(10, 10%, 70%, 0.3);
+    /* background-color: hsla(10, 10%, 70%, 0.3); */
     /* filter: drop-shadow(20px 20px 500px grey); */
     width: 100vw;
     height: 60vh;
-    margin: 8rem 0;
+    margin: 4rem 0;
     z-index: 2;
 }
 
@@ -77,26 +77,24 @@ nav {
     /* position:absolute; */
     /* background-color: hsla(10, 10%, 78%, 0.3); */
     z-index: 2;
-    margin: 0 30rem
+    /* margin: 0 30rem */
 }
 
 .displayForecast {
     display: flex;
     flex-flow: row nowrap; 
     justify-content: space-evenly;
-    /* flex-shrink: 3; */
-    background-color: hsla(10, 10%, 78%, 0.3);
-    /* height: 10rem;
-    width: 10rem; */
+    background-color: hsla(10, 10%, 68%, 0.3);
     margin-top: 3rem;
     z-index: 2;
 }
 
 .dailyForecast {
-    display: flex;
-    flex-flow: column nowrap;
-    height: 3rem;
-    width: 3rem;
+    background-color: hsla(10, 10%, 80%, 0.6);
+}
+
+.dailyForecast:hover {
+    background-color: hsla(10, 10%, 90%, 0.6);
 }
 
 .forecastIcon {

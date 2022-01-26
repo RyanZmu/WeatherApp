@@ -102,7 +102,7 @@ class UserWeather {
                 forecastIcon.classList.add('forecastIcon')
                 forecastIcon.src = weatherIcon[index]
             
-                forecastCell.innerHTML = `${dayName[index]} 
+                forecastCell.innerHTML =`${dayName[index]} 
                 ${temperatureDisplay[index]} ${forecastDisplayShort[index]}`
                 forecastCell.prepend(forecastIcon)
             }
@@ -114,15 +114,14 @@ class UserWeather {
             './images/rainstormBG.jpg'
         ]
         
-     
+        if (forecastDisplayShort[0].includes('Snow Showers')){
+            backgroundImage.style.backgroundImage = `url(${images[0]})`
+        }
         if (forecastDisplayShort[0].includes('Sunny')) {
             backgroundImage.style.backgroundImage = `url(${images[1]})`
         }
-        if (forecastDisplayShort[0].includes('Showers')) {
+        if (forecastDisplayShort[0].includes('Thunderstorms')) {
             backgroundImage.style.backgroundImage = `url(${images[2]})`
-        }
-        if (forecastDisplayShort[0].includes('Snow Showers')){
-            backgroundImage.style.backgroundImage = `url(${images[0]})`
         }
         // "url(" + images[x] + ")";
         // })
