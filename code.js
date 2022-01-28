@@ -96,13 +96,13 @@ class UserWeather {
             for(let index = 1;index<forecastPeriods.length;index++){
                 const forecastCell = document.createElement('div')
                 forecastCell.classList.add('dailyForecast')
-                displayForecast.prepend(forecastCell)
+                displayForecast.append(forecastCell)
 
                 const forecastIcon = document.createElement('img')
                 forecastIcon.classList.add('forecastIcon')
                 forecastIcon.src = weatherIcon[index]
             
-                forecastCell.innerHTML =`${dayName[index]} 
+                forecastCell.innerHTML =`<br>${dayName[index]} 
                 ${temperatureDisplay[index]} ${forecastDisplayShort[index]}`
                 forecastCell.prepend(forecastIcon)
             }
@@ -125,6 +125,12 @@ class UserWeather {
         }
         // "url(" + images[x] + ")";
         // })
+    }
+}
+
+class Button {
+    constructor() {
+
     }
 
     weatherButton() {

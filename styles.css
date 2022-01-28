@@ -46,8 +46,6 @@ nav {
 #contentContainer {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
-    /* justify-content: center; */
     position:absolute;
     background-color: hsla(10, 10%, 68%, 0.6);
     /* filter: blur(10px); */
@@ -58,38 +56,34 @@ nav {
 }
 
 .weatherDisplay {
-    /* display:flex;
-    flex-flow: row nowrap; */
-    position:absolute;
-    /* background-color: hsla(10, 10%, 70%, 0.3); */
-    /* filter: drop-shadow(20px 20px 500px grey); */
     width: 100vw;
     height: 60vh;
     margin: 4rem 0;
-    z-index: 2;
 }
 
 .displayCurrent {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
-    /* position:absolute; */
-    /* background-color: hsla(10, 10%, 78%, 0.3); */
-    z-index: 2;
-    /* margin: 0 30rem */
+    justify-content: center;    
 }
 
 .displayForecast {
     display: flex;
-    flex-flow: row nowrap; 
-    justify-content: space-evenly;
+    flex-flow: row nowrap;
     background-color: hsla(10, 10%, 68%, 0.3);
+    /* max-height: 100px;
+    max-width: 100px; */
     margin-top: 3rem;
-    z-index: 2;
 }
 
 .dailyForecast {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex-basis: 150px;
+    /* align-items: center; */
+    /* margin-right: 55px; */
     background-color: hsla(10, 10%, 80%, 0.6);
 }
 
